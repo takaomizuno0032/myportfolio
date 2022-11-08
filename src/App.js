@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import ResponsiveAppBar from './components/NavBar';
+import Card from './components/Card';
+import Skills from './components/Skills';
+import Experiences from './components/Experiences';
+import TopImage from './static/img/top_img.jpg';
+
+
+const card = {
+  title: 'Takao Mizuno',
+  description:
+    "I am a Software Engineer",
+  descriptionTwo: "C#, Python, Typescript, React",
+  image: TopImage,
+  imageText: 'main image description',
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <ResponsiveAppBar />
       </header>
+      <main>
+        <Card post={card} />
+        <div id="skills">
+          <Skills />
+        </div>
+        <div id='experiences'>
+          <Experiences />
+        </div>
+      </main>
     </div>
   );
 }
