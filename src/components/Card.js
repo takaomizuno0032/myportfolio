@@ -7,7 +7,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 
 function Card(props) {
-    const { post } = props;
+    const { detail } = props;
 
     const trackingInContract = keyframes`
         0% {
@@ -42,13 +42,13 @@ function Card(props) {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
-                backgroundImage: `url(${post.image})`,
+                backgroundImage: `url(${detail.image})`,
                 transparent: 0.5,
                 minHeight: '100vh'
             }}
         >
             {/* Increase the priority of the hero background image */}
-            {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
+            {<img style={{ display: 'none' }} src={detail.image} alt={detail.imageText} />}
             <Box
                 sx={{
                     position: 'absolute',
@@ -75,14 +75,14 @@ function Card(props) {
                         }}
                     >
                         <AutName component="h1" variant="h3" color="inherit" gutterBottom sx={{ fontFamily: 'Robot' }}>
-                            {post.title}
+                            {detail.title}
                         </AutName>
                         <TypeAnimation
                             sequence={[
                                 1300,
-                                post.description,
+                                detail.description,
                                 1000,
-                                post.descriptionTwo,
+                                detail.descriptionTwo,
                                 1000,
                                 ''
                             ]}
@@ -98,7 +98,7 @@ function Card(props) {
 }
 
 Card.propTypes = {
-    post: PropTypes.shape({
+    detail: PropTypes.shape({
         description: PropTypes.string.isRequired,
         image: PropTypes.string.isRequired,
         imageText: PropTypes.string.isRequired,

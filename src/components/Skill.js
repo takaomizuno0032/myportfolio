@@ -10,7 +10,7 @@ function Skill(props) {
             <Box>
                 <Card sx={{ display: 'flex', justifyContent: 'center' }}>
                     <CardContent sx={{ flex: 1 }}>
-                        <Typography component="h2" variant="h5" align='left'>
+                        <Typography component="h2" variant="h5" align='left' sx={{ textDecoration: 'underline' }}>
                             {skill.language}
                         </Typography>
 
@@ -20,7 +20,7 @@ function Skill(props) {
                     </CardContent>
                     <CardMedia
                         component="img"
-                        sx={{ width: 100, display: { xs: 'none', sm: 'block' } }}
+                        sx={{ maxWidth: 100, display: { sm: 'block' } }}
                         image={skill.image}
                         alt={skill.imageLabel}
                     />

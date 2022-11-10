@@ -1,35 +1,36 @@
 import './App.css';
-import ResponsiveAppBar from './components/NavBar';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Personal from './components/Personal';
+import Header from './components/Header';
 import Card from './components/Card';
 import Skills from './components/Skills';
-import Experiences from './components/Experiences';
-import TopImage from './static/img/top_img.jpg';
+import Experiences from './components/Portfolios';
+import Home from './components/Home';
+import PageNotFound from './components/PageNotFound';
+import Footer from './components/Footer';
 
-
-const card = {
-  title: 'Takao Mizuno',
-  description:
-    "I am a Software Engineer",
-  descriptionTwo: "C#, Python, Typescript, React",
-  image: TopImage,
-  imageText: 'main image description',
-}
 
 function App() {
   return (
     <div className="App">
       <header>
-        <ResponsiveAppBar />
+        <Header />
       </header>
       <main>
-        <Card post={card} />
-        <div id="skills">
-          <Skills />
+        <div>
+          <Routes>
+            <Route path="myportfolio" element={<Home />} />
+            <Route path="profile" element={<Personal />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+
         </div>
-        <div id='experiences'>
-          <Experiences />
-        </div>
+
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

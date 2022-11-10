@@ -4,7 +4,7 @@ import Skill from '../components/Skill';
 import CIcon from '../static/img/c_icon.png';
 import PythonIcon from '../static/img/python_icon.png';
 import TypescriptIcon from '../static/img/typescript_icon.png';
-import ReactIcon from '../static/img/react_icon.jpg';
+import ReactIcon from '../static/img/react_icon.png';
 
 
 function Skills(props) {
@@ -41,9 +41,9 @@ function Skills(props) {
     ]
 
     return (
-        <Grid container>
-            <Grid item xs={12} md={12} lg={12} sx={{ background: 'black' }}>
-                <Typography variant='h4' align='center' color={'white'} gutterBottom >
+        <Grid container spacing={2} sx={{ marginTop: '1px' }}>
+            <Grid item xs={12} md={12} lg={12} sx={{ background: '#9DD6CE' }}>
+                <Typography variant='h4' align='center' fontFamily={'Roboto'} fontStyle={'italic'} color={'white'} gutterBottom >
                     Skills
                 </Typography>
             </Grid>
