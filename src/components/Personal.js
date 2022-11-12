@@ -60,7 +60,7 @@ function Personal() {
                                     <WorkIcon />
                                 </Avatar>
                             </ListItemAvatar>
-                            <ListItemText primary="My Experiences" />
+                            <ListItemText primary="Experiences" />
                         </ListItem>
                         <ListItem sx={{ pl: 5 }}>
                             <ListItemText primary="Software Engineer at a data security company" secondary="2020.04.01 ~ 2022.06.30" />
@@ -74,7 +74,7 @@ function Personal() {
                                     <SchoolIcon />
                                 </Avatar>
                             </ListItemAvatar>
-                            <ListItemText primary="My Education" />
+                            <ListItemText primary="Education" />
                         </ListItem>
                         <ListItem sx={{ pl: 5 }}>
                             <ListItemText primary="Queensland University of Technology in Australia" secondary="2022.07.25 ~" />
@@ -88,7 +88,7 @@ function Personal() {
                                     <SurfingIcon />
                                 </Avatar>
                             </ListItemAvatar>
-                            <ListItemText primary="My Hobby" />
+                            <ListItemText primary="Hobby" />
                         </ListItem>
                         <ListItem sx={{ pl: 5 }}>
                             <ListItemText primary="Lacrosse" secondary="2015.04.01 ~ now. I belong to a local lacrosse team in Brisbane." />
