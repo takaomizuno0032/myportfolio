@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Contact from './Contact';
 import PropTypes from 'prop-types';
 import { Typography, Avatar } from '@mui/material';
 

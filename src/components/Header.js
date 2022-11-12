@@ -7,15 +7,10 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { BrowserRouter as Router, Link as RouterLink } from "react-router-dom";
-import Link from '@mui/material/Link';
-import SelfPic from '../static/img/selfpic.jpg';
+import { HashLink } from 'react-router-hash-link';
 
 
 const theme = createTheme(
@@ -25,13 +20,12 @@ const theme = createTheme(
                 light: '#A9A9A9',
                 main: '#9DD6CE',
                 dark: '#34343F',
-                // contrastText: 'rgba(0, 0, 0, 0.87)',
             }
         }
     }
 )
 
-const pages = ['Skills', 'Portfolios', 'Contact'];
+const pages = ['Profile', 'Skills', 'Portfolios', 'Contact'];
 const settings = ['Profile'];
 
 
@@ -42,17 +36,12 @@ function Header() {
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
-    const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
-    };
+
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
 
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
 
     return (
         <ThemeProvider theme={theme}>
@@ -108,7 +97,11 @@ function Header() {
                             >
                                 {pages.map((page) => (
                                     <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                        <Typography component='a' href={'/myportfolio#' + page.toLowerCase()} underline='none'>{page}</Typography>
+                                        <HashLink
+                                            smooth to={'/myportfolio#' + page.toLowerCase()}
+                                            scroll={el => { el.scrollIntoView(true); window.scrollBy(0, 0) }}
+                                        >{page}
+                                        </HashLink>
                                     </MenuItem>
                                 ))}
                             </Menu>
@@ -138,40 +131,13 @@ function Header() {
                                     onClick={handleCloseNavMenu}
                                     sx={{ my: 2, color: 'white', display: 'block' }}
                                 >
-                                    <Typography component="a" href={'/myportfolio#' + page.toLowerCase()} sx={{ color: 'white' }} underline='none'>{page}
-                                    </Typography>
+                                    <HashLink
+                                        smooth to={'/myportfolio#' + page.toLowerCase()}
+                                        scroll={el => { el.scrollIntoView(true); window.scrollBy(0, 0) }}
+                                    >{page}
+                                    </HashLink>
                                 </Button>
                             ))}
-                        </Box>
-
-                        <Box sx={{ flexGrow: 0 }}>
-                            <Tooltip title="Open settings">
-                                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                    <Avatar alt="Takao" src={SelfPic} />
-                                </IconButton>
-                            </Tooltip>
-                            <Menu
-                                sx={{ mt: '45px' }}
-                                id="menu-appbar"
-                                anchorEl={anchorElUser}
-                                anchorOrigin={{
-                                    vertical: 'top',
-                                    horizontal: 'right',
-                                }}
-                                keepMounted
-                                transformOrigin={{
-                                    vertical: 'top',
-                                    horizontal: 'right',
-                                }}
-                                open={Boolean(anchorElUser)}
-                                onClose={handleCloseUserMenu}
-                            >
-                                {settings.map((setting) => (
-                                    <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                        <RouterLink to="/profile">{setting}</RouterLink>
-                                    </MenuItem>
-                                ))}
-                            </Menu>
                         </Box>
                     </Toolbar>
                 </Container>

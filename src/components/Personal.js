@@ -1,11 +1,9 @@
 import * as React from 'react';
-import { Typography, Grid, Card, CardMedia, CardContent, Box, Paper, List, ListItem, ListItemAvatar, ListItemText } from '@mui/material';
+import { Typography, Grid, List, ListItem, ListItemAvatar, ListItemText } from '@mui/material';
 import PersonalPicture from '../static/img/selfpic.jpg';
-import PersonalPictureSmall from '../static/img/selfpic_small.jpg';
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import Avatar from '@mui/material/Avatar';
-import SportsBaseballIcon from '@mui/icons-material/SportsBaseball';
 import SurfingIcon from '@mui/icons-material/Surfing';
 
 function Personal() {

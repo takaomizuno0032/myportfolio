@@ -10,6 +10,24 @@
 
 
 .icon-hover:hover {
-  opacity: 0.3;
+  opacity: 0.6;
 
+}
+
+
+
+.language-underline span {
+  left: -2px;
+  bottom: -0px;
+  height: 10px;
+  background: rgba(200, 18, 31);
+  background: linear-gradient(150deg, rgba(200, 18, 31, 0.4) 0%,
+      rgba(200, 18, 31, 0.3) 60%,
+      rgba(0, 0, 0, 0) 80%);
+  border-radius: 2px 0 0 20px;
+  transition: 0s;
+}
+
+.self-picture:hover {
+  opacity: 0.6;
 }

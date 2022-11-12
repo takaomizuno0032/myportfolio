@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { Box, Grid, Typography, Container, ImageList, ImageListItem, ImageListItemBar } from '@mui/material';
-import ImageGallery from 'react-image-gallery';
+import { Grid, Typography, Container } from '@mui/material';
 import LineIcon from '../static/img/linebot.png';
 import ResizeIcon from '../static/img/resize.jpg';
 import DiscordIcon from '../static/img/discord.png';

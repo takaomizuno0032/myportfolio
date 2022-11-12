@@ -1,9 +1,8 @@
 import * as React from 'react';
-import { Typography, Grid, Avatar, Container } from '@mui/material';
+import { Typography, Grid, Container } from '@mui/material';
 import LinkedInIcon from '../static/img/linkedin.png';
 import FacebookIcon from '../static/img/facebook.png';
 import QiitaIcon from '../static/img/qiita.png';
-import GithubIcon from '../static/img/github.png';
 import InstaIcon from '../static/img/instagram.png';
 import ContactElement from './ContactElement';
 

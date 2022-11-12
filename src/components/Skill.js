@@ -10,8 +10,11 @@ function Skill(props) {
             <Box>
                 <Card sx={{ display: 'flex', justifyContent: 'center' }}>
                     <CardContent sx={{ flex: 1 }}>
-                        <Typography component="h2" variant="h5" align='left' sx={{ textDecoration: 'underline' }}>
-                            {skill.language}
+                        <Typography className='language-underline' component="h2" variant="h5" align='left'>
+                            <span>
+                                {skill.language}
+
+                            </span>
                         </Typography>
 
                         <Typography variant="subtitle1" align='left' paragraph>
