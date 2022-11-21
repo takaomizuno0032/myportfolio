@@ -3,6 +3,7 @@ import { Grid, Typography, Container } from '@mui/material';
 import LineIcon from '../static/img/linebot.png';
 import ResizeIcon from '../static/img/resize.jpg';
 import DiscordIcon from '../static/img/discord.png';
+import KeyboardIcon from '../static/img/keyboard.png';
 import Portfolio from './Portfolio';
 
 // this component of portfolios part.
@@ -24,7 +25,12 @@ function Portfolios() {
         url: 'https://github.com/takaomizuno0032/Discord-Bot-2.0',
     }
 
-    const items = [portfolio1, portfolio2, portfolio3];
+    const portfolio4 = {
+        image: KeyboardIcon,
+        url: 'https://github.com/takaomizuno0032/keyboardcommerce',
+    }
+
+    const items = [portfolio1, portfolio2, portfolio3, portfolio4];
 
     return (
         <Grid container spacing={3} sx={{ marginTop: '1px' }}>
