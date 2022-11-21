@@ -13,7 +13,6 @@ function Skill(props) {
                         <Typography className='language-underline' component="h2" variant="h5" align='left'>
                             <span>
                                 {skill.language}
-
                             </span>
                         </Typography>
 
@@ -28,9 +27,7 @@ function Skill(props) {
                         alt={skill.imageLabel}
                     />
                 </Card>
-
             </Box>
-
         </Grid>
 
     )

@@ -21,7 +21,4 @@ Portfolio.propTypes = {
     image: PropTypes.string.isRequired
 };
 
-
-
-
 export default Portfolio;

@@ -6,9 +6,11 @@ import QiitaIcon from '../static/img/qiita.png';
 import InstaIcon from '../static/img/instagram.png';
 import ContactElement from './ContactElement';
 
-
+// this component of contact part.
 function Contact() {
 
+    //todo.
+    // these data should be fetched from database.
     const linkedIn = {
         url: "https://www.linkedin.com/in/takao-mizuno-776a04231/",
         image: LinkedInIcon

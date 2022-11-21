@@ -5,18 +5,10 @@ import ResizeIcon from '../static/img/resize.jpg';
 import DiscordIcon from '../static/img/discord.png';
 import Portfolio from './Portfolio';
 
-function _onClick(event) {
-    console.log("hoge");
-
-}
-
-function _addClass(event) {
-
-}
-
-
-
+// this component of portfolios part.
 function Portfolios() {
+    // todo.
+    // these data should be fetched from database..
     const portfolio1 = {
         image: LineIcon,
         url: 'https://github.com/takaomizuno0032/LineBot',
@@ -33,12 +25,6 @@ function Portfolios() {
     }
 
     const items = [portfolio1, portfolio2, portfolio3];
-    const state = {
-        showFullscreenButton: false,
-
-    }
-
-
 
     return (
         <Grid container spacing={3} sx={{ marginTop: '1px' }}>
@@ -55,9 +41,6 @@ function Portfolios() {
                         ))}
                 </Container>
             </Grid>
-
-
-
         </Grid >
     );
 }

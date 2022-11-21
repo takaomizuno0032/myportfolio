@@ -5,7 +5,9 @@ import Paper from '@mui/material/Paper';
 import { Typography, Grid, Box, keyframes } from '@mui/material';
 import { TypeAnimation } from 'react-type-animation';
 
-
+// this component of top page part displaying my name.
+// todo.
+// change the name into more understandble.
 function Card(props) {
     const { detail } = props;
 
@@ -27,11 +29,6 @@ function Card(props) {
         animation: `0.8s ${trackingInContract} 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both`
 
     }));
-
-    // const Description = styled(Typography)(() => ({
-    //     animation: `${popDown} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`
-    // }))
-
 
     return (
         <Paper

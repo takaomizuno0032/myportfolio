@@ -7,17 +7,6 @@ import Avatar from '@mui/material/Avatar';
 import SurfingIcon from '@mui/icons-material/Surfing';
 
 function Personal() {
-
-    const commonStyles = {
-        bgcolor: 'background.paper',
-        borderColor: 'text.primary',
-        m: 1,
-        border: 1,
-        width: '5rem',
-        height: '5rem',
-    };
-
-
     return (
         <React.Fragment>
             <Typography variant="h3" fontFamily={'Roboto'} fontStyle={'italic'} align='left' sx={{ margin: '10px' }}>
@@ -25,6 +14,7 @@ function Personal() {
             </Typography>
             <Grid container spacing={5}>
                 <Grid item md={5} lg={5} >
+                    {/* to display when bigger than md size. */}
                     <Avatar
                         alt="small-self-picture"
                         src={PersonalPicture}
@@ -48,6 +38,7 @@ function Personal() {
                         }}
                     />
                 </Grid>
+                {/* Description of introduction */}
                 <Grid item sx={{ margin: '10px' }}>
                     <Typography variant='h5' align='left' sx={{ textDecoration: 'underline' }}>I am a Master of IT student at QUT. My major is Computer Science.</Typography>
                     <Typography align='left'>I have three years experience working as an IT engineer in Japan. </Typography>
@@ -96,14 +87,9 @@ function Personal() {
                         <ListItem sx={{ pl: 5 }}>
                             <ListItemText primary="Surfin" secondary="I want to try!!" />
                         </ListItem>
-
-
-
                     </List>
-
                 </Grid>
             </Grid>
-
         </React.Fragment>
     );
 }

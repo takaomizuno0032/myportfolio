@@ -4,13 +4,16 @@ import Avatar from '@mui/material/Avatar';
 import { BrowserRouter as Router, Link as RouterLink } from "react-router-dom";
 import SelfPic from '../static/img/selfpic.jpg';
 
+// The component of profile part.
 function Profile() {
+
+    // go to top position when page transition.
     const topScroll = () => {
         window.scrollTo(0, 0);
     }
 
     return (<Grid container spacing={2} sx={{ marginTop: '1px' }}>
-        <Grid item xs={12} md={12} lg={12} sx={{ background: '#9DD6CE' }}>
+        <Grid item xs={12} md={12} lg={12} sx={{ backgroundColor: 'custom.main' }}>
             <Typography variant='h4' align='center' fontFamily={'Roboto'} fontStyle={'italic'} color={'white'} gutterBottom >
                 Profile
             </Typography>
@@ -32,14 +35,8 @@ function Profile() {
                     }}
                 >
                 </Avatar>
-
-
             </RouterLink>
         </Container>
-
-
-
-
     </Grid>);
 }
 

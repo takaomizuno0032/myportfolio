@@ -6,8 +6,10 @@ import PythonIcon from '../static/img/python_icon.png';
 import TypescriptIcon from '../static/img/typescript_icon.png';
 import ReactIcon from '../static/img/react_icon.png';
 
-
+// this component of skills part.
 function Skills(props) {
+    // todo.
+    // these data should be fetch from database, but this method has thme as const currently...
     const skill1 = {
         language: "C#",
         description: "I have experienced C# for 3 years at an IT company in Japan. This is my fundamental skill.",
@@ -42,7 +44,7 @@ function Skills(props) {
 
     return (
         <Grid container spacing={2} sx={{ marginTop: '1px' }}>
-            <Grid item xs={12} md={12} lg={12} sx={{ background: '#9DD6CE' }}>
+            <Grid item xs={12} md={12} lg={12} sx={{ backgroundColor: 'custom.main' }}>
                 <Typography variant='h4' align='center' fontFamily={'Roboto'} fontStyle={'italic'} color={'white'} gutterBottom >
                     Skills
                 </Typography>
