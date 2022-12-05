@@ -5,6 +5,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import Avatar from '@mui/material/Avatar';
 import SurfingIcon from '@mui/icons-material/Surfing';
+import { Container } from '@mui/system';
 
 function Personal() {
     return (
@@ -90,7 +91,8 @@ function Personal() {
                     </List>
                 </Grid>
             </Grid>
-        </React.Fragment>
+
+        </React.Fragment >
     );
 }
 

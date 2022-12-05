@@ -13,7 +13,7 @@ import { HashLink } from 'react-router-hash-link';
 
 function Header() {
 
-    const pages = ['Profile', 'Skills', 'Portfolios', 'Contact'];
+    const pages = ['Profile', 'Skills', 'Portfolios', 'Blogs', 'Contact'];
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {

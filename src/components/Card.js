@@ -41,7 +41,8 @@ function Card(props) {
                 backgroundPosition: 'center',
                 backgroundImage: `url(${detail.image})`,
                 transparent: 0.5,
-                minHeight: '100vh'
+                minHeight: '100vh',
+                textAlign: 'center'
             }}
         >
             {/* Increase the priority of the hero background image */}

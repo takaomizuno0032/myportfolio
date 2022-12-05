@@ -5,6 +5,7 @@ import CIcon from '../static/img/c_icon.png';
 import PythonIcon from '../static/img/python_icon.png';
 import TypescriptIcon from '../static/img/typescript_icon.png';
 import ReactIcon from '../static/img/react_icon.png';
+import SolidityIcon from '../static/img/solidity_icon.png';
 
 // this component of skills part.
 function Skills(props) {
@@ -38,8 +39,15 @@ function Skills(props) {
         imageLabel: "react-icon"
     }
 
+    const skill5 = {
+        language: "Solidity",
+        description: "My interest. I am learning it by creating my personal Dapp.",
+        image: SolidityIcon,
+        imageLabel: "solidity-icon"
+    }
+
     const skills = [
-        skill1, skill2, skill3, skill4
+        skill1, skill2, skill3, skill4, skill5
     ]
 
     return (

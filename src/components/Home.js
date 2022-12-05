@@ -5,6 +5,7 @@ import Portfolios from './Portfolios';
 import Contact from './Contact';
 import TopImage from '../static/img/top_img.jpg';
 import Profile from './Profile';
+import Blogs from './Blogs';
 
 function Home() {
 
@@ -28,6 +29,9 @@ function Home() {
             </div>
             <div id="portfolios">
                 <Portfolios />
+            </div>
+            <div id="blog">
+                <Blogs />
             </div>
             <div id="contact">
                 <Contact />
