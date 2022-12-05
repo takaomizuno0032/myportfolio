@@ -13,7 +13,7 @@ function Home() {
         title: 'Takao Mizuno',
         description:
             "I am a Software Engineer",
-        descriptionTwo: "C#, Python, Typescript, React",
+        descriptionTwo: "C#, Python, Typescript, React, Solidity",
         image: TopImage,
         imageText: 'main image description',
     }
