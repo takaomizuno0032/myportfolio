@@ -8,7 +8,7 @@ function Blog() {
         <React.Fragment>
             <Container>
                 <Grid container>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={6} sx={{ px: 2 }}>
                         <Typography variant='h5' sx={{ marginTop: 3 }}>
                             This is my blog.
                         </Typography>
@@ -26,7 +26,7 @@ function Blog() {
                     <Grid item xs={12} md={5}>
                         <Typography component='a' href={'https://knowledge-database.vercel.app/'} target='_blank' sx={{ display: 'inline-block', margin: '10px' }}>
                             <Avatar className='icon-hover' src={BlogIcon} variant="rounded" sx={{
-                                width: '400px',
+                                width: '350px',
                                 height: '200px'
                             }}>
 

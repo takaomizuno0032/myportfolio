@@ -41,7 +41,7 @@ function Contact() {
                     Contact
                 </Typography>
             </Grid>
-            <Grid item sx={{ margin: '0 auto' }}>
+            <Grid item sx={{ margin: '0 auto', textAlign: 'center' }}>
                 <Container >
                     {
                         contacts.map((element, i) => (

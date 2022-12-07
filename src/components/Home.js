@@ -30,7 +30,7 @@ function Home() {
             <div id="portfolios">
                 <Portfolios />
             </div>
-            <div id="blog">
+            <div id="blogs">
                 <Blogs />
             </div>
             <div id="contact">

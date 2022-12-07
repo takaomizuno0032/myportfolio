@@ -39,7 +39,7 @@ function Portfolios() {
                     Portfolios
                 </Typography>
             </Grid>
-            <Grid item sx={{ margin: '0 auto' }}>
+            <Grid item sx={{ margin: '0 auto', textAlign: 'center' }}>
                 <Container >
                     {
                         items.map((item, i) => (
