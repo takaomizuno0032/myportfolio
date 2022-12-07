@@ -45,6 +45,8 @@ function Personal() {
                     <Typography align='left'>I have three years experience working as an IT engineer in Japan. </Typography>
                     <Typography align='left'>I can motivate my colleague, create new function and communicate smoothly with all stakeholders.</Typography>
                     <Typography align='left'>Seeking the environment that friendly and enhance each other.</Typography>
+                    <Typography align='left'>I am interested in Blockchain, so I have read "Mastering of Ethereum" and creating a Dapp.</Typography>
+
                     <List>
                         <ListItem>
                             <ListItemAvatar>
