@@ -45,7 +45,7 @@ function Personal() {
                     <Typography align='left'>I have three years experience working as an IT engineer in Japan. </Typography>
                     <Typography align='left'>I can motivate my colleague, create new function and communicate smoothly with all stakeholders.</Typography>
                     <Typography align='left'>Seeking the environment that friendly and enhance each other.</Typography>
-                    <Typography align='left'>I am interested in Blockchain, so I have read "Mastering of Ethereum" and creating a Dapp.</Typography>
+                    <Typography align='left'>I am interested in Blockchain and learning this skill to create web3 apps.</Typography>
 
                     <List>
                         <ListItem>
@@ -57,10 +57,13 @@ function Personal() {
                             <ListItemText primary="Experiences" />
                         </ListItem>
                         <ListItem sx={{ pl: 5 }}>
-                            <ListItemText primary="Software Engineer at a data security company" secondary="2020.04.01 ~ 2022.06.30" />
+                            <ListItemText primary="Blockchain Engineer" secondary="2022.12 ~ " />
                         </ListItem>
                         <ListItem sx={{ pl: 5 }}>
-                            <ListItemText primary="Web Engineer at a web company" secondary="2019.05.01 ~ 2020.02.28" />
+                            <ListItemText primary="Software Engineer at a data security company" secondary="2020.04 ~ 2022.06" />
+                        </ListItem>
+                        <ListItem sx={{ pl: 5 }}>
+                            <ListItemText primary="Web Engineer at a web company" secondary="2019.05 ~ 2020.02" />
                         </ListItem>
                         <ListItem>
                             <ListItemAvatar>
