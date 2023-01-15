@@ -12,23 +12,24 @@ function Portfolios() {
     // these data should be fetched from database..
     const portfolio1 = {
         image: LineIcon,
-        url: 'https://github.com/takaomizuno0032/LineBot',
+        url: 'https://github.com/takaomizuno0032/blockchain_news_bot',
     }
 
     const portfolio2 = {
-        image: ResizeIcon,
-        url: 'https://github.com/takaomizuno0032/Resize_Photo',
+        image: KeyboardIcon,
+        url: 'https://github.com/takaomizuno0032/keyboardcommerce',
     }
-
     const portfolio3 = {
         image: DiscordIcon,
         url: 'https://github.com/takaomizuno0032/Discord-Bot-2.0',
     }
 
     const portfolio4 = {
-        image: KeyboardIcon,
-        url: 'https://github.com/takaomizuno0032/keyboardcommerce',
+        image: ResizeIcon,
+        url: 'https://github.com/takaomizuno0032/Resize_Photo',
     }
+
+
 
     const items = [portfolio1, portfolio2, portfolio3, portfolio4];
 

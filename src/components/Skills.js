@@ -27,14 +27,14 @@ function Skills(props) {
 
     const skill3 = {
         language: "Typescript",
-        description: "In Japan, I created UI by typescript and Knockout.js framework. This is my front-end skill.",
+        description: "I develop blockchain applications using typescript and Node.js.",
         image: TypescriptIcon,
         imageLabel: "typescript-icon"
     }
 
     const skill4 = {
         language: "React",
-        description: "This site is created by React and Material UI. This is new skill I am learning. ",
+        description: "This site is created by React and Material UI. I can use Next.js, as well.",
         image: ReactIcon,
         imageLabel: "react-icon"
     }
