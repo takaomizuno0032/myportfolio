@@ -4,6 +4,7 @@ import LinkedInIcon from '../static/img/linkedin.png';
 import FacebookIcon from '../static/img/facebook.png';
 import QiitaIcon from '../static/img/qiita.png';
 import InstaIcon from '../static/img/instagram.png';
+import TwitterIcon from '../static/img/twitter.png'
 import ContactElement from './ContactElement';
 
 // this component of contact part.
@@ -31,7 +32,12 @@ function Contact() {
         image: InstaIcon
     }
 
-    const contacts = [linkedIn, facebook, qiita, instagram];
+    const twitter = {
+        url: "https://twitter.com/taka_water_32",
+        image: TwitterIcon
+    }
+
+    const contacts = [linkedIn, twitter, facebook, qiita, instagram];
 
 
     return (
