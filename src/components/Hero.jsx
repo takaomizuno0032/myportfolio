@@ -7,7 +7,6 @@ import { personDetail } from '../const/personDetail';
 
 
 // this component of top page part displaying my name.
-// todo.
 // change the name into more understandble.
 function Hero() {
     
