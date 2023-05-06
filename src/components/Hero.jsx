@@ -1,16 +1,17 @@
 import * as React from 'react';
 import styled from '@mui/material/styles/styled';
-import PropTypes from 'prop-types';
 import Paper from '@mui/material/Paper';
 import { Typography, Grid, Box, keyframes } from '@mui/material';
 import { TypeAnimation } from 'react-type-animation';
+import { personDetail } from '../const/personDetail';
+
 
 // this component of top page part displaying my name.
 // todo.
 // change the name into more understandble.
-function Card(props) {
-    const { detail } = props;
-
+function Hero() {
+    
+    // animation of my name.
     const trackingInContract = keyframes`
         0% {
             letter-spacing: 1em;
@@ -24,7 +25,6 @@ function Card(props) {
             opacity: 1;
         }
     `;
-
     const AutName = styled(Typography)(() => ({
         animation: `0.8s ${trackingInContract} 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both`
 
@@ -39,14 +39,14 @@ function Card(props) {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
-                backgroundImage: `url(${detail.image})`,
+                backgroundImage: `url(${personDetail.image})`,
                 transparent: 0.5,
                 minHeight: '100vh',
                 textAlign: 'center'
             }}
         >
             {/* Increase the priority of the hero background image */}
-            {<img style={{ display: 'none' }} src={detail.image} alt={detail.imageText} />}
+            {<img style={{ display: 'none' }} src={personDetail.image} alt={personDetail.imageText} />}
             <Box
                 sx={{
                     position: 'absolute',
@@ -73,14 +73,14 @@ function Card(props) {
                         }}
                     >
                         <AutName component="h1" variant="h3" color="inherit" gutterBottom sx={{ fontFamily: 'Robot' }}>
-                            {detail.title}
+                            {personDetail.title}
                         </AutName>
                         <TypeAnimation
                             sequence={[
                                 1300,
-                                detail.description,
+                                personDetail.description,
                                 1000,
-                                detail.descriptionTwo,
+                                personDetail.descriptionTwo,
                                 1000,
                                 ''
                             ]}
@@ -95,13 +95,4 @@ function Card(props) {
     );
 }
 
-Card.propTypes = {
-    detail: PropTypes.shape({
-        description: PropTypes.string.isRequired,
-        image: PropTypes.string.isRequired,
-        imageText: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
-    }).isRequired,
-};
-
-export default Card;
+export default Hero;
