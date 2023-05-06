@@ -8,9 +8,7 @@ import ReactIcon from '../static/img/react_icon.png';
 import SolidityIcon from '../static/img/solidity_icon.png';
 
 // this component of skills part.
-function Skills(props) {
-    // todo.
-    // these data should be fetch from database, but this method has thme as const currently...
+function Skills() {
     const skill1 = {
         language: "C#",
         description: "I have experienced C# for 3 years at an IT company in Japan. This is my fundamental skill.",
@@ -57,12 +55,9 @@ function Skills(props) {
                     Skills
                 </Typography>
             </Grid>
-            {
-                skills.map((skill, i) => (
-                    <Skill key={i} skill={skill} sx={{ marginBottom: '3px' }} />
-                ))}
-
-
+            {skills.map((skill, i) => (
+                <Skill key={i} skill={skill} sx={{ marginBottom: '3px' }} />
+            ))}
         </Grid>
     );
 }

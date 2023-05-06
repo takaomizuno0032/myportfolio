@@ -1,6 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { Typography, Grid, Card, CardMedia, CardContent, Box } from '@mui/material';
+import '../styles/Skill.css'
+
 
 function Skill(props) {
     const { skill } = props;
