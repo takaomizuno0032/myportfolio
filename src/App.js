@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Personal from './components/Personal';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -25,23 +25,15 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <header>
+        <BrowserRouter>
           <Header />
-        </header>
-        <main>
-          <div>
-            <Routes>
-              <Route path="/myportfolio" element={<Home />} />
-              <Route path="myportfolio/personal" element={<Personal />} />
-              <Route path="*" element={<PageNotFound />} />
-            </Routes>
-
-          </div>
-        </main>
-        <footer>
+          <Routes>
+            <Route path="/myportfolio" element={<Home />} />
+            <Route path="/myportfolio/personal" element={<Personal />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
           <Footer />
-        </footer>
-
+        </BrowserRouter>
       </ThemeProvider>
     </div>
   );

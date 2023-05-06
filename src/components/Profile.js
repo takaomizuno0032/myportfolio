@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Grid, Container, Typography } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
-import { BrowserRouter as Router, Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import SelfPic from '../static/img/selfpic.jpg';
 
 // The component of profile part.
