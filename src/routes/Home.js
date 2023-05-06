@@ -1,11 +1,11 @@
 import * as React from 'react';
-import Card from './Card';
-import Skills from './Skills';
-import Portfolios from './Portfolios';
-import Contact from './Contact';
+import Card from '../components/Card';
+import Skills from '../components/Skills';
+import Portfolios from '../components/Portfolios';
+import Contact from '../components/Contact';
 import TopImage from '../static/img/top_img.jpg';
-import Profile from './Profile';
-import Blogs from './Blogs';
+import Profile from '../components/Profile';
+import Blogs from '../components/Blogs';
 
 function Home() {
 

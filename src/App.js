@@ -1,10 +1,10 @@
 import './App.css';
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Personal from './components/Personal';
+import Personal from './routes/Personal';
 import Header from './components/Header';
-import Home from './components/Home';
-import PageNotFound from './components/PageNotFound';
+import Home from './routes/Home';
+import PageNotFound from './routes/PageNotFound';
 import Footer from './components/Footer';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
