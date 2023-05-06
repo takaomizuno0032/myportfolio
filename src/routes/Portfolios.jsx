@@ -4,7 +4,7 @@ import LineIcon from '../static/img/linebot.png';
 import ResizeIcon from '../static/img/resize.jpg';
 import DiscordIcon from '../static/img/discord.png';
 import KeyboardIcon from '../static/img/keyboard.png';
-import Portfolio from './Portfolio';
+import Portfolio from '../components/Portfolio';
 
 // this component of portfolios part.
 function Portfolios() {
@@ -35,8 +35,8 @@ function Portfolios() {
 
     return (
         <Grid container spacing={3} sx={{ marginTop: '1px' }}>
-            <Grid item xs={12} md={12} lg={12} sx={{ background: '#9DD6CE' }}>
-                <Typography variant='h4' fontFamily={'Roboto'} fontStyle={'italic'} align='center' color={'white'} gutterBottom >
+            <Grid item xs={12} md={12} lg={12}>
+                <Typography variant='h4' fontStyle={'italic'} align='center' gutterBottom >
                     Portfolios
                 </Typography>
             </Grid>

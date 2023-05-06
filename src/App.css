@@ -8,4 +8,9 @@ body {
   background-color: var(--main-color-light);
   font-family: 'Nunito', sans-serif !important;
   min-width: 370px;
+  color: var(--main-color-dark);
+}
+
+.custom-button {
+  color: var(--main-color-dark) !important;
 }

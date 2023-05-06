@@ -6,6 +6,7 @@ import PythonIcon from '../static/img/python_icon.png';
 import TypescriptIcon from '../static/img/typescript_icon.png';
 import ReactIcon from '../static/img/react_icon.png';
 import SolidityIcon from '../static/img/solidity_icon.png';
+import DockerIcon from '../static/img/docker_icon.webp';
 
 // this component of skills part.
 function Skills() {
@@ -44,21 +45,35 @@ function Skills() {
         imageLabel: "solidity-icon"
     }
 
+    const skill6 = {
+        language: "Docker",
+        description: "I have managed developing environment by Docker. I use a combination of cloudformation and docker-compose.yml to automate my infrastructure. ",
+        image: DockerIcon,
+        imageLabel: "docker-icon"
+    }
+
+
     const skills = [
-        skill1, skill2, skill3, skill4, skill5
+        skill1, skill2, skill3, skill4, skill5, skill6
     ]
 
     return (
-        <Grid container spacing={2} sx={{ marginTop: '1px' }}>
-            <Grid item xs={12} md={12} lg={12} sx={{ backgroundColor: 'custom.main' }}>
-                <Typography variant='h4' align='center' fontFamily={'Roboto'} fontStyle={'italic'} color={'white'} gutterBottom >
-                    Skills
-                </Typography>
+        <div>
+            <Grid container spacing={2} sx={{ marginTop: '1px' }}>
+                <Grid item xs={12} md={12} lg={12}>
+                    <Typography variant='h4' align='center' fontStyle={'italic'} gutterBottom >
+                        Skills
+                    </Typography>
+                </Grid>
+
+                {skills.map((skill, i) => (
+                <Grid item xs={12} md={6} lg={4} sx={{ marginBottom: '3px' }} key={i}>
+                    <Skill  skill={skill}  />
+                </Grid>
+                ))}
             </Grid>
-            {skills.map((skill, i) => (
-                <Skill key={i} skill={skill} sx={{ marginBottom: '3px' }} />
-            ))}
-        </Grid>
+            <Typography variant='h5'>AWS(EC2, CloudFormation, QLDB, DymamoDB), Database(MySQL, SQlite, MongoDB), Containerd, etc.</Typography>
+        </div>
     );
 }
 

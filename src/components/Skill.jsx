@@ -6,32 +6,28 @@ import '../styles/Skill.css'
 
 function Skill(props) {
     const { skill } = props;
-    return (
+    return (        
+        <Box>
+            <Card sx={{ display: 'flex', justifyContent: 'center', height: '12rem'}}>
+                <CardContent sx={{ flex: 1 }}>
+                    <Typography className='language-underline' component="h2" variant="h5" align='left'>
+                        <span>
+                            {skill.language}
+                        </span>
+                    </Typography>
 
-        <Grid item xs={12} md={12} lg={12}>
-            <Box>
-                <Card sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <CardContent sx={{ flex: 1 }}>
-                        <Typography className='language-underline' component="h2" variant="h5" align='left'>
-                            <span>
-                                {skill.language}
-                            </span>
-                        </Typography>
-
-                        <Typography variant="subtitle1" align='left' paragraph>
-                            {skill.description}
-                        </Typography>
-                    </CardContent>
-                    <CardMedia
-                        component="img"
-                        sx={{ maxWidth: 100, display: { sm: 'block' } }}
-                        image={skill.image}
-                        alt={skill.imageLabel}
-                    />
-                </Card>
-            </Box>
-        </Grid>
-
+                    <Typography variant="subtitle1" align='left' paragraph>
+                        {skill.description}
+                    </Typography>
+                </CardContent>
+                <CardMedia
+                    component="img"
+                    sx={{ maxWidth: 150, display: { sm: 'block' } }}
+                    image={skill.image}
+                    alt={skill.imageLabel}
+                />
+            </Card>
+        </Box>
     )
 }
 
