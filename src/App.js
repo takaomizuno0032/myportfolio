@@ -1,6 +1,7 @@
 import './App.css';
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import TopScroll from './components/TopScroll';
 import Personal from './routes/Personal';
 import Header from './components/Header';
 import Home from './routes/Home';
@@ -26,6 +27,7 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <BrowserRouter>
+          <TopScroll/>
           <Header />
           <Routes>
             <Route path="/myportfolio" element={<Home />} />

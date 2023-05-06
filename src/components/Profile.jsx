@@ -1,15 +1,15 @@
 import * as React from 'react';
-import { Grid, Container, Typography } from '@mui/material';
+import { Grid, Container, Typography, Button } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
-import { Link as RouterLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import SelfPic from '../static/img/selfpic.jpg';
 
 // The component of profile part.
 function Profile() {
+    const navigate = useNavigate();
 
-    // go to top position when page transition.
-    const topScroll = () => {
-        window.scrollTo(0, 0);
+    const onClick = () => {
+        navigate('/myportfolio/personal')
     }
 
     return (
@@ -24,7 +24,7 @@ function Profile() {
                 <Typography fontStyle={'italic'} sx={{ display: 'inline-block' }}>Takao Mizuno.</Typography>
                 <Typography sx={{ marginBottom: '10px' }}>I am a software engineer and Master of IT student in Australia.</Typography>
                 <Typography>↓ more detail ↓</Typography>
-                <RouterLink to="personal" onClick={topScroll}>
+                <Button onClick={onClick}>
                     <Avatar
                         className='self-picture'
                         alt="Takao"
@@ -36,7 +36,7 @@ function Profile() {
                         }}
                     >
                     </Avatar>
-                </RouterLink>
+                </Button>
             </Container>
         </Grid>);
 }
