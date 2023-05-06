@@ -1,7 +1,11 @@
-.icon-hover:hover {
-  opacity: 0.6;
+:root {
+  --main-color: #9DD6CE;
+  --main-color-light: #F2F2F2;
+  --main-color-dark: #2F4858;
 }
 
-.self-picture:hover {
-  opacity: 0.6;
+body {
+  background-color: var(--main-color-light);
+  font-family: 'Nunito', sans-serif !important;
+  min-width: 370px;
 }

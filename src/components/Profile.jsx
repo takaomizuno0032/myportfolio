@@ -3,6 +3,7 @@ import { Grid, Container, Typography, Button } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import { useNavigate } from "react-router-dom";
 import SelfPic from '../static/img/selfpic.jpg';
+import '../styles/Profile.css'
 
 // The component of profile part.
 function Profile() {
