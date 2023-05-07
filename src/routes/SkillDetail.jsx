@@ -10,11 +10,7 @@ function SkillDetail() {
 
   return (
     <div>
-      <Grid
-        container
-        sx={{ marginBottom: "10px", paddingLeft: "5px" }}
-        spacing={3}
-      >
+      <Grid container sx={{ marginTop: "1px", paddingLeft: "5px" }} spacing={3}>
         <Grid item xs={12} md={12} lg={12}>
           <Typography variant="h4" fontStyle={"italic"} gutterBottom>
             Detail of {skill.technique}

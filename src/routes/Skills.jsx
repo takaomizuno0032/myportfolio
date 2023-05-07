@@ -12,7 +12,7 @@ function Skills() {
 
   return (
     <div>
-      <Grid container spacing={2} sx={{ marginTop: "1px" }}>
+      <Grid container spacing={2} sx={{ marginTop: "1px", paddingX: "5px" }}>
         <Grid item xs={12} md={12} lg={12}>
           <Typography variant="h4" fontStyle={"italic"} gutterBottom>
             Skills
