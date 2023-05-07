@@ -1,45 +1,60 @@
-import * as React from 'react';
-import { Grid, Container, Typography, Button } from '@mui/material';
-import Avatar from '@mui/material/Avatar';
+import { Grid, Container, Typography, Button } from "@mui/material";
+import Avatar from "@mui/material/Avatar";
 import { useNavigate } from "react-router-dom";
-import SelfPic from '../static/img/selfpic.jpg';
-import '../styles/Profile.css'
+import SelfPic from "../static/img/selfpic.jpg";
+import "../styles/Profile.css";
 
-// The component of profile part.
 function Profile() {
   const navigate = useNavigate();
 
   const onClick = () => {
-    navigate('/myportfolio/personal')
-  }
+    navigate("/myportfolio/personal");
+  };
 
   return (
-    <Grid container spacing={2} sx={{ marginTop: '1px', textAlign: 'center' }}>
-      <Grid item xs={12} md={12} lg={12} sx={{ backgroundColor: 'custom.main' }}>
-          <Typography variant='h4' align='center' fontFamily={'Roboto'} fontStyle={'italic'} color={'white'} gutterBottom >
-            Profile
-          </Typography>
+    <Grid container spacing={2} sx={{ marginTop: "1px", textAlign: "center" }}>
+      <Grid
+        item
+        xs={12}
+        md={12}
+        lg={12}
+        sx={{ backgroundColor: "custom.main" }}
+      >
+        <Typography
+          variant="h4"
+          align="center"
+          fontFamily={"Roboto"}
+          fontStyle={"italic"}
+          color={"white"}
+          gutterBottom
+        >
+          Profile
+        </Typography>
       </Grid>
-      <Container sx={{ margin: '0 auto' }}>
-        <Typography sx={{ display: 'inline-block' }}>My name is </Typography>
-        <Typography fontStyle={'italic'} sx={{ display: 'inline-block' }}>Takao Mizuno.</Typography>
-        <Typography sx={{ marginBottom: '10px' }}>I am a software engineer and Master of IT student in Australia.</Typography>
+      <Container sx={{ margin: "0 auto" }}>
+        <Typography sx={{ display: "inline-block" }}>My name is </Typography>
+        <Typography fontStyle={"italic"} sx={{ display: "inline-block" }}>
+          Takao Mizuno.
+        </Typography>
+        <Typography sx={{ marginBottom: "10px" }}>
+          I am a software engineer and Master of IT student in Australia.
+        </Typography>
         <Typography>↓ more detail ↓</Typography>
         <Button onClick={onClick}>
           <Avatar
-            className='self-picture'
+            className="self-picture"
             alt="Takao"
             src={SelfPic}
             sx={{
-                display: 'inline-block',
-                minWidth: 300,
-                minHeight: 300
+              display: "inline-block",
+              minWidth: 300,
+              minHeight: 300,
             }}
-          >
-          </Avatar>
+          ></Avatar>
         </Button>
       </Container>
-    </Grid>);
+    </Grid>
+  );
 }
 
 export default Profile;

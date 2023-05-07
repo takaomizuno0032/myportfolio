@@ -3,7 +3,6 @@ import { Grid, Typography, Button } from "@mui/material";
 import Skill from "../components/Skill";
 import { skills } from "../const/skillSet";
 
-// this component of skills part.
 function Skills() {
   const [showList, setShowList] = useState(false);
 

@@ -1,27 +1,32 @@
-import { Typography, TableContainer, CardContent, Table, TableBody, TableRow, TableCell, Card } from '@mui/material';
-
+import {
+  TableContainer,
+  Table,
+  TableBody,
+  TableRow,
+  TableCell,
+} from "@mui/material";
 
 function SkillInfo(props) {
   const skillInfo = props.skillInfo;
   return (
-    <TableContainer >
+    <TableContainer>
       <Table>
         <TableBody>
           <TableRow>
             <TableCell>Years</TableCell>
-            <TableCell>{ skillInfo.years} years</TableCell>
+            <TableCell>{skillInfo.years} years</TableCell>
           </TableRow>
           <TableRow>
             <TableCell>Level</TableCell>
-            <TableCell>{skillInfo.level }</TableCell>
+            <TableCell>{skillInfo.level}</TableCell>
           </TableRow>
           <TableRow>
             <TableCell>Work Experience</TableCell>
-            <TableCell>{ skillInfo.workExperience ? "YES" : "NO"}</TableCell>
+            <TableCell>{skillInfo.workExperience ? "YES" : "NO"}</TableCell>
           </TableRow>
           <TableRow>
             <TableCell>Scale</TableCell>
-            <TableCell>{ skillInfo.scale }</TableCell>
+            <TableCell>{skillInfo.scale}</TableCell>
           </TableRow>
           <TableRow>
             <TableCell>Description</TableCell>
@@ -30,7 +35,7 @@ function SkillInfo(props) {
         </TableBody>
       </Table>
     </TableContainer>
-  )
+  );
 }
 
 export default SkillInfo;
