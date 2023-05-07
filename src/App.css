@@ -13,4 +13,10 @@ body {
 
 .custom-button {
   color: var(--main-color-dark) !important;
+  border: 1px solid var(--main-color-dark) !important;
+}
+
+.custom-button:hover {
+  background-color: var(--main-color-dark) !important;
+  color: var(--main-color-light) !important;
 }

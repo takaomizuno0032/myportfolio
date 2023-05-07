@@ -1,39 +1,45 @@
-import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Typography, Grid, Card, CardMedia, CardContent, Box } from '@mui/material';
 import '../styles/Skill.css'
 
 
 function Skill(props) {
-    const { skill } = props;
-    return (        
-        <Box>
-            <Card sx={{ display: 'flex', justifyContent: 'center', height: '12rem'}}>
-                <CardContent sx={{ flex: 1 }}>
-                    <Typography className='language-underline' component="h2" variant="h5" align='left'>
-                        <span>
-                            {skill.language}
-                        </span>
-                    </Typography>
+  const { skill } = props;
+  const navigate = useNavigate();
 
-                    <Typography variant="subtitle1" align='left' paragraph>
-                        {skill.description}
-                    </Typography>
-                </CardContent>
-                <CardMedia
-                    component="img"
-                    sx={{ maxWidth: 150, display: { sm: 'block' } }}
-                    image={skill.image}
-                    alt={skill.imageLabel}
-                />
-            </Card>
-        </Box>
-    )
+  const onClick = () => {
+    navigate(`/myportfolio/skills/${skill.id}`)
+  }
+
+  return (        
+    <Box>
+      <Card sx={{ display: 'flex', justifyContent: 'center', height: '12rem'}} className='skill-card' onClick={onClick}>
+        <CardContent sx={{ flex: 1 }}>
+          <Typography className='technique-underline' component="h2" variant="h5" align='left'>
+            <span>
+                {skill.technique}
+            </span>
+          </Typography>
+
+          <Typography variant="subtitle1" align='left' paragraph>
+            {skill.description}
+          </Typography>
+      </CardContent>
+      <CardMedia
+        component="img"
+        sx={{ maxWidth: 150, display: { sm: 'block' } }}
+        image={skill.image}
+        alt={skill.imageLabel}
+      />
+      </Card>
+    </Box>
+  )
 }
 
 Skill.propTypes = {
     skill: PropTypes.shape({
-        language: PropTypes.string.isRequired,
+        technique: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
         image: PropTypes.string.isRequired,
         imageLabel: PropTypes.string.isRequired

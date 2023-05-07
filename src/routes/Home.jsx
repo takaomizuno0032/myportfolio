@@ -5,15 +5,15 @@ import Profile from '../components/Profile';
 
 function Home() {
 
-    return (
-        <React.Fragment>
-            <Hero />
-            <Profile />
-            <div id="contact">
-                <Contact />
-            </div>
-        </React.Fragment>
-    );
+return (
+  <div>
+    <Hero />
+    <Profile />
+    <div id="contact">
+      <Contact />
+    </div>
+  </div>
+);
 }
 
 

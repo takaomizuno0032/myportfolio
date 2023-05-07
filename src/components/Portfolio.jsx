@@ -4,21 +4,21 @@ import { Typography, Avatar } from '@mui/material';
 import '../styles/Portfolio.css'
 
 function Portfolio(props) {
-    return (
-        <Typography component='a' href={props.url} target='_blank' sx={{ display: 'inline-block', margin: '10px' }}>
-            <Avatar className='icon-hover' src={props.image} variant="rounded" sx={{
-                width: '200px',
-                height: '200px'
-            }}>
+  return (
+    <Typography component='a' href={props.url} target='_blank' sx={{ display: 'inline-block', margin: '10px' }}>
+      <Avatar className='icon-hover' src={props.image} variant="rounded" sx={{
+        width: '200px',
+        height: '200px'
+      }}>
 
-            </Avatar>
-        </Typography>
-    );
+      </Avatar>
+    </Typography>
+  );
 }
 
 Portfolio.propTypes = {
-    url: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired
 };
 
 export default Portfolio;

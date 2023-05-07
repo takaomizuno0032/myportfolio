@@ -1,0 +1,16 @@
+.skill-detail-card {
+  max-width: 800px;
+  margin-bottom: 16px;
+}
+
+.skill-detail-card-media {
+  height: 0;
+  padding-top: 56.25%
+}
+
+.skill-detail-card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100
+}

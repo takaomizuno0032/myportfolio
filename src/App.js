@@ -6,6 +6,7 @@ import Personal from './routes/Personal';
 import Header from './components/Header';
 import Home from './routes/Home';
 import Skills from './routes/Skills';
+import SkillDetail from './routes/SkillDetail';
 import Portfolios from './routes/Portfolios';
 import PageNotFound from './routes/PageNotFound';
 import Footer from './components/Footer';
@@ -35,6 +36,7 @@ function App() {
             <Route path="/myportfolio" element={<Home />} />
             <Route path="/myportfolio/personal" element={<Personal />} />
             <Route path="/myportfolio/skills" element={<Skills />} />
+            <Route path="/myportfolio/skills/:id" element={<SkillDetail />} />
             <Route path="/myportfolio/portfolios" element={<Portfolios />} />
             <Route path="/myportfolio/*" element={<PageNotFound />} />
           </Routes>

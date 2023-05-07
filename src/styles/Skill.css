@@ -1,4 +1,4 @@
-.language-underline span {
+.technique-underline span {
   left: -2px;
   bottom: -0px;
   height: 10px;
@@ -8,4 +8,13 @@
       rgba(0, 0, 0, 0) 80%);
   border-radius: 2px 0 0 20px;
   transition: 0s;
+}
+
+.skill-card {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: scale(1.03);
 }
