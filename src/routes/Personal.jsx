@@ -5,24 +5,36 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
+  Button,
 } from "@mui/material";
 import PersonalPicture from "../static/img/selfpic.jpg";
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
 import Avatar from "@mui/material/Avatar";
 import SurfingIcon from "@mui/icons-material/Surfing";
+import FileDownloadIcon from "@mui/icons-material/FileDownload";
+import CvPdf from "../static/assets/cv.pdf";
 
 function Personal() {
   return (
     <div>
-      <Typography
-        variant="h3"
-        fontStyle={"italic"}
-        align="left"
-        sx={{ margin: "10px" }}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          margin: "10px",
+        }}
       >
-        My introduction
-      </Typography>
+        <Typography variant="h3" fontStyle={"italic"}>
+          My introduction
+        </Typography>
+        <a href={CvPdf} download="cv.pdf">
+          <Button className="custom-button">
+            <FileDownloadIcon />
+            Download CV
+          </Button>
+        </a>
+      </div>
       <Grid container spacing={5}>
         <Grid item md={5} lg={5}>
           {/* to display when bigger than md size. */}

@@ -10,12 +10,7 @@ function Portfolios() {
     <div>
       <Grid container spacing={3} sx={{ marginTop: "1px" }}>
         <Grid item xs={12} md={12} lg={12}>
-          <Typography
-            variant="h4"
-            fontStyle={"italic"}
-            align="center"
-            gutterBottom
-          >
+          <Typography variant="h4" fontStyle={"italic"} gutterBottom>
             Portfolios
           </Typography>
         </Grid>
