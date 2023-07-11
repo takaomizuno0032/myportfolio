@@ -68,7 +68,8 @@ function Personal() {
             align="left"
             sx={{ textDecoration: "underline" }}
           >
-            I am a Master of IT student at QUT. My major is Computer Science.
+            I am a Master of IT student at University of Queensland. My major is
+            Information Technology.
           </Typography>
           <Typography align="left">
             I have three years experience working as an IT engineer in Japan.{" "}
@@ -119,6 +120,12 @@ function Personal() {
                 </Avatar>
               </ListItemAvatar>
               <ListItemText primary="Education" />
+            </ListItem>
+            <ListItem sx={{ pl: 5 }}>
+              <ListItemText
+                primary="University of Queensland in Australia"
+                secondary="2023.07.25 ~"
+              />
             </ListItem>
             <ListItem sx={{ pl: 5 }}>
               <ListItemText
