@@ -5,56 +5,219 @@ import SelfPic from "../static/img/selfpic.jpg";
 import "../styles/Profile.css";
 
 function Profile() {
-  const navigate = useNavigate();
+    const navigate = useNavigate();
 
-  const onClick = () => {
-    navigate("/myportfolio/personal");
-  };
+    const onClick = () => {
+        navigate("/myportfolio/personal");
+    };
 
-  return (
-    <Grid container spacing={2} sx={{ marginTop: "1px", textAlign: "center" }}>
-      <Grid
-        item
-        xs={12}
-        md={12}
-        lg={12}
-        sx={{ backgroundColor: "custom.main" }}
-      >
-        <Typography
-          variant="h4"
-          align="center"
-          fontFamily={"Roboto"}
-          fontStyle={"italic"}
-          color={"white"}
-          gutterBottom
+    return (
+        <Grid
+            container
+            spacing={2}
+            sx={{ marginTop: "1px", textAlign: "center" }}
         >
-          Profile
-        </Typography>
-      </Grid>
-      <Container sx={{ margin: "0 auto" }}>
-        <Typography sx={{ display: "inline-block" }}>My name is </Typography>
-        <Typography fontStyle={"italic"} sx={{ display: "inline-block" }}>
-          Takao Mizuno.
-        </Typography>
-        <Typography sx={{ marginBottom: "10px" }}>
-          I am a software engineer and Master of IT student in Australia.
-        </Typography>
-        <Typography>↓ more detail ↓</Typography>
-        <Button onClick={onClick}>
-          <Avatar
-            className="self-picture"
-            alt="Takao"
-            src={SelfPic}
-            sx={{
-              display: "inline-block",
-              minWidth: 300,
-              minHeight: 300,
-            }}
-          ></Avatar>
-        </Button>
-      </Container>
-    </Grid>
-  );
+            <Grid
+                item
+                xs={12}
+                md={12}
+                lg={12}
+                sx={{ backgroundColor: "custom.main" }}
+            >
+                <Typography
+                    variant="h4"
+                    align="center"
+                    fontFamily={"Roboto"}
+                    fontStyle={"italic"}
+                    color={"white"}
+                    gutterBottom
+                >
+                    Profile
+                </Typography>
+            </Grid>
+
+            <Container sx={{ margin: "20px" }}>
+                <Grid container spacing={2}>
+                    <Grid item xs={12} md={8}>
+                        <Grid item xs={12} md={8}>
+                            <Typography
+                                variant="h5"
+                                align="left"
+                                color={"black"}
+                                sx={{ fontFamily: "Roboto" }}
+                            >
+                                Education
+                            </Typography>
+
+                            <Grid container sx={{ margin: "5px" }}>
+                                <Grid item xs={12} md={4}>
+                                    <Typography
+                                        variant="h6"
+                                        align="left"
+                                        sx={{ fontFamily: "Roboto" }}
+                                    >
+                                        03/2020:
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12} md={8}>
+                                    <Typography
+                                        variant="h6"
+                                        align="left"
+                                        sx={{ fontFamily: "Roboto" }}
+                                    >
+                                        Graduate from The University of Tokyo |
+                                        Bachelor of Education in Physical and
+                                        Health Education
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                            <Grid container sx={{ margin: "5px" }}>
+                                <Grid item xs={12} md={4}>
+                                    <Typography
+                                        variant="h6"
+                                        align="left"
+                                        sx={{ fontFamily: "Roboto" }}
+                                    >
+                                        04/2020 - 06/2022:
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12} md={8}>
+                                    <Typography
+                                        variant="h6"
+                                        align="left"
+                                        sx={{ fontFamily: "Roboto" }}
+                                    >
+                                        Software Engineer | Amiya Inc. (Tokyo,
+                                        Japan)
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+
+                            <Grid container sx={{ margin: "5px" }}>
+                                <Grid item xs={12} md={4}>
+                                    <Typography
+                                        variant="h6"
+                                        align="left"
+                                        sx={{ fontFamily: "Roboto" }}
+                                    >
+                                        12/2024:
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12} md={8}>
+                                    <Typography
+                                        variant="h6"
+                                        align="left"
+                                        sx={{ fontFamily: "Roboto" }}
+                                    >
+                                        Graduated with a Master of Information
+                                        Technology from the University of
+                                        Queensland, Research Group: UQ Cyber
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+
+                            {/* Add more text entries here as in the screenshot */}
+                        </Grid>
+
+                        <Grid item xs={12} md={8}>
+                            <Typography
+                                variant="h5"
+                                align="left"
+                                color={"black"}
+                                sx={{ fontFamily: "Roboto" }}
+                            >
+                                Work Experience
+                            </Typography>
+                            <Grid container sx={{ margin: "5px" }}>
+                                <Grid item xs={12} md={4}>
+                                    <Typography
+                                        variant="h6"
+                                        align="left"
+                                        sx={{ fontFamily: "Roboto" }}
+                                    >
+                                        05/2019 - 02/2020:
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12} md={8}>
+                                    <Typography
+                                        variant="h6"
+                                        align="left"
+                                        sx={{ fontFamily: "Roboto" }}
+                                    >
+                                        Software Engineer Intern | Nexceed Inc.
+                                        (Tokyo, Japan)
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+
+                            <Grid container sx={{ margin: "5px" }}>
+                                <Grid item xs={12} md={4}>
+                                    <Typography
+                                        variant="h6"
+                                        align="left"
+                                        sx={{ fontFamily: "Roboto" }}
+                                    >
+                                        04/2020 - 06/2022:
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12} md={8}>
+                                    <Typography
+                                        variant="h6"
+                                        align="left"
+                                        sx={{ fontFamily: "Roboto" }}
+                                    >
+                                        Software Engineer | Amiya Inc. (Tokyo,
+                                        Japan)
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+
+                            <Grid container sx={{ margin: "5px" }}>
+                                <Grid item xs={12} md={4}>
+                                    <Typography
+                                        variant="h6"
+                                        align="left"
+                                        sx={{ fontFamily: "Roboto" }}
+                                    >
+                                        12/2022 - Current:
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12} md={8}>
+                                    <Typography
+                                        variant="h6"
+                                        align="left"
+                                        sx={{ fontFamily: "Roboto" }}
+                                    >
+                                        Software Engineer | Gaiax Inc. (Tokyo,
+                                        Japan, Remote from Australia)
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+
+                            {/* Add more text entries here as in the screenshot */}
+                        </Grid>
+                    </Grid>
+
+                    <Grid item xs={12} md={4}>
+                        {/* Right side image */}
+                        <Grid item xs={12} md={4} sx={{ textAlign: "center" }}>
+                            <Avatar
+                                onClick={onClick}
+                                alt="Takao"
+                                src={SelfPic}
+                                sx={{
+                                    width: 300,
+                                    height: 300,
+                                    margin: "0 auto",
+                                    cursor: "pointer",
+                                }}
+                            />
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Container>
+        </Grid>
+    );
 }
 
 export default Profile;
