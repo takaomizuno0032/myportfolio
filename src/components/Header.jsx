@@ -23,10 +23,10 @@ function Header() {
         setAnchorElNav(null);
     };
 
-    const pages = ["home", "personal", "skills", "portfolios"];
+    const pages = ["Home", "Experience", "Skills"];
 
     const onClick = (page) => {
-        if (page === "home") {
+        if (page === "Home") {
             navigate("/myportfolio");
         } else {
             navigate(`/myportfolio/${page}`);
