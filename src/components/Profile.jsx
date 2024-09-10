@@ -8,7 +8,7 @@ function Profile() {
     const navigate = useNavigate();
 
     const onClick = () => {
-        navigate("/myportfolio/personal");
+        navigate("/myportfolio/experience");
     };
 
     return (
