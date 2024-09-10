@@ -65,30 +65,10 @@ function Profile() {
                                         align="left"
                                         sx={{ fontFamily: "Roboto" }}
                                     >
-                                        Graduate from The University of Tokyo |
+                                        Graduate from The University of Tokyo,{" "}
+                                        <br />
                                         Bachelor of Education in Physical and
                                         Health Education
-                                    </Typography>
-                                </Grid>
-                            </Grid>
-                            <Grid container sx={{ margin: "5px" }}>
-                                <Grid item xs={12} md={4}>
-                                    <Typography
-                                        variant="h6"
-                                        align="left"
-                                        sx={{ fontFamily: "Roboto" }}
-                                    >
-                                        04/2020 - 06/2022:
-                                    </Typography>
-                                </Grid>
-                                <Grid item xs={12} md={8}>
-                                    <Typography
-                                        variant="h6"
-                                        align="left"
-                                        sx={{ fontFamily: "Roboto" }}
-                                    >
-                                        Software Engineer | Amiya Inc. (Tokyo,
-                                        Japan)
                                     </Typography>
                                 </Grid>
                             </Grid>
@@ -109,9 +89,10 @@ function Profile() {
                                         align="left"
                                         sx={{ fontFamily: "Roboto" }}
                                     >
-                                        Graduated with a Master of Information
-                                        Technology from the University of
-                                        Queensland, Research Group: UQ Cyber
+                                        Graduated from the University of
+                                        Queensland, <br /> Master of Information
+                                        Technology, <br /> Research Group: UQ
+                                        Cyber
                                     </Typography>
                                 </Grid>
                             </Grid>
