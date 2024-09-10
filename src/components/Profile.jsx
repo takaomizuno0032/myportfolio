@@ -197,6 +197,30 @@ function Profile() {
                     </Grid>
                 </Grid>
             </Container>
+            <Grid item xs={12} md={12} lg={12}>
+                <Typography variant="h5" align="center" fontFamily={"Roboto"}>
+                    Motto
+                </Typography>
+                <Typography
+                    variant="h6"
+                    align="center"
+                    fontFamily={"Roboto"}
+                    sx={{ fontStyle: "italic" }}
+                >
+                    "新しい技術を生み、表に出していくことこそが、私の技術者としての自己実現であり、また、私なりの社会への貢献である"
+                </Typography>
+                <Typography
+                    variant="h6"
+                    align="center"
+                    fontFamily={"Roboto"}
+                    sx={{ fontStyle: "italic" }}
+                >
+                    "Creating new technologies and bringing them to the
+                    forefront is my way of realizing myself as an engineer, and
+                    it is also my contribution to society."
+                </Typography>
+                <Typography>- 金子勇</Typography>
+            </Grid>
         </Grid>
     );
 }
