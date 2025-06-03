@@ -174,7 +174,27 @@ function Profile() {
                                     </Typography>
                                 </Grid>
                             </Grid>
-
+                            <Grid container sx={{ margin: "5px" }}>
+                                <Grid item xs={12} md={4}>
+                                    <Typography
+                                        variant="h6"
+                                        align="left"
+                                        sx={{ fontFamily: "Roboto" }}
+                                    >
+                                        01/2025 - Current:
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12} md={8}>
+                                    <Typography
+                                        variant="h6"
+                                        align="left"
+                                        sx={{ fontFamily: "Roboto" }}
+                                    >
+                                        Chief Technology Officer | Secure Vertex
+                                        Inc. (Tokyo, Japan)
+                                    </Typography>
+                                </Grid>
+                            </Grid>
                             {/* Add more text entries here as in the screenshot */}
                         </Grid>
                     </Grid>
